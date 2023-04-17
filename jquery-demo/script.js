@@ -35,6 +35,7 @@ $(document).ready(function() {
     const birthDate = new Date(dateString);
     let age = today.getFullYear() - birthDate.getFullYear();
     const m = today.getMonth() - birthDate.getMonth();
+    //If the current month and day are before the birth month and day, the age is reduced by 1.
     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
         age--;
     }
