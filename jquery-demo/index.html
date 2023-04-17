@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Caveat|Rock+Salt|Sigmar+One&display=swap" rel="stylesheet">
+        <title>GirlsDayYay</title>
+    </head>
+    <body>
+        <div class="title"><h1>Wer bist du?</h1></div>
+        <div class="startModal">
+            <div id="instructions">
+                <h2>Willkommen in Europace Mädchentag!</h2>
+                <h3>Willkommen bei diesem Fragebogen, mit dem wir mehr über unsere Gruppe erfahren möchten </h3>
+                <h2>Fertig?</h2>
+                <button id='startTheGame' type="button" name="button">GO</button>
+            </div>
+
+        </div>
+        <div class="youWin">
+            <div id="message">
+                <img class="passport" src="passport.gif" alt="">
+                <h3>Your passport is ready! Get your luggage and your camera and don't be late!</h3>
+                 <button id="resetting" type="button" name="button">
+                     Feel like trying a new trip? Click here!</button>
+                <img class="visa" src="visa.jpg" alt="">
+
+         </div>
+     </div>
+
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+             <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+     <div class="middlePage">
+         <div class="sideBar">
+             <div class="passportPage">
+                 <ul>Mädchen-List</ul>
+             </div>
+
+             <div class="picBar">
+                 <img class='wardrobe'src="womanWritingCode.jpg" alt="womanWritingCode">
+             </div>
+
+         </div>
+
+     </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src='script.js'>
+</script>
+    </body>
+</html>
