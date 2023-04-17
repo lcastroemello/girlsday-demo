@@ -1,58 +1,57 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
-        <link href="https://fonts.googleapis.com/css?family=Caveat|Rock+Salt|Sigmar+One&display=swap" rel="stylesheet">
-        <title>GirlsDayYay</title>
-    </head>
-    <body>
-        <div class="title"><h1>Wer bist du?</h1></div>
-        <div class="startModal">
-            <div id="instructions">
-                <h2>Willkommen in Europace Mädchentag!</h2>
-                <h3>Willkommen bei diesem Fragebogen, mit dem wir mehr über unsere Gruppe erfahren möchten </h3>
-                <h2>Fertig?</h2>
-                <button id='startTheGame' type="button" name="button">GO</button>
-            </div>
-
-        </div>
-        <div class="youWin">
-            <div id="message">
-                <img class="passport" src="passport.gif" alt="">
-                <h3>Your passport is ready! Get your luggage and your camera and don't be late!</h3>
-                 <button id="resetting" type="button" name="button">
-                     Feel like trying a new trip? Click here!</button>
-                <img class="visa" src="visa.jpg" alt="">
-
-         </div>
-     </div>
-
-        <form action="/action_page.php">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
-             <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe"><br><br>
-            <input type="submit" value="Submit">
-        </form>
-
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-
-     <div class="middlePage">
-         <div class="sideBar">
-             <div class="passportPage">
-                 <ul>Mädchen-List</ul>
-             </div>
-
-             <div class="picBar">
-                 <img class='wardrobe'src="womanWritingCode.jpg" alt="womanWritingCode">
-             </div>
-
-         </div>
-
-     </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src='script.js'>
-</script>
-    </body>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mädchentag: Wer sind wir?</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mädchentag: Wer sind wir?</h1>
+      <p>Willkommen zum Mädchentag! Lass uns ein wenig über uns selbst herausfinden.</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="geburtsdatum">Geburtsdatum:</label>
+        <input type="date" id="geburtsdatum" name="geburtsdatum" max="2005-04-17" required>
+        <br>
+        <label for="augenfarbe">Augenfarbe:</label>
+        <select id="augenfarbe" name="augenfarbe">
+          <option value="blau">Blau</option>
+          <option value="braun">Braun</option>
+          <option value="grün">Grün</option>
+          <option value="grau">Grau</option>
+          <option value="sonstige">Sonstige</option>
+        </select>
+        <br>
+        <label>Hast du Haustiere?</label>
+        <label><input type="radio" name="haustiere" value="ja">Ja</label>
+        <label><input type="radio" name="haustiere" value="nein">Nein</label>
+        <br><br>
+        <button type="submit">Absenden</button>
+      </form>
+      <button id="export-btn">Exportieren</button>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Geburtsdatum</th>
+            <th>Alter</th>
+            <th>Augenfarbe</th>
+            <th>Haustiere</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+      </table>
+      <div id="success-display">
+        <button id="close-btn">X</button>
+        <img src="https://media.giphy.com/media/3o7qDJKioZzRxdfgOY/giphy.gif" alt="success-gif">
+        <p>Vielen Dank, dass Sie mit unserem Formular gearbeitet haben! Lassen Sie uns die Daten überprüfen.</p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
