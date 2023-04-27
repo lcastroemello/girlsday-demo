@@ -14,20 +14,22 @@
         <input type="text" id="name" name="name" required>
         <br>
         <label for="geburtsdatum">Geburtsdatum:</label>
-        <input type="date" id="geburtsdatum" name="geburtsdatum" max="2005-04-17" required>
+        <input type="date" id="geburtsdatum" name="geburtsdatum" max="2005-04-27" required>
         <br>
-        <label for="augenfarbe">Augenfarbe:</label>
-        <select id="augenfarbe" name="augenfarbe">
-          <option value="blau">Blau</option>
-          <option value="braun">Braun</option>
-          <option value="grün">Grün</option>
-          <option value="grau">Grau</option>
-          <option value="sonstige">Sonstige</option>
+        <label for="hometown">hometown:</label>
+        <select id="hometown" name="hometown">
+          <option value="berlin">berlin</option>
+          <option value="london">london</option>
+          <option value="moskau">moskau</option>
+          <option value="madrid">madrid</option>
+          <option value="glasgow">glasgow</option>
+          <option value="lissabon">lissabon</option>
+          <option value="other">other</option>
         </select>
         <br>
-        <label>Hast du Haustiere?</label>
-        <label><input type="radio" name="haustiere" value="ja">Ja</label>
-        <label><input type="radio" name="haustiere" value="nein">Nein</label>
+        <label>hobbies?</label>
+        <label><input type="radio" name="hobbies" value="yes, of course">yes, of course</label>
+        <label><input type="radio" name="hobbies" value="no, what's that?">no, what's that?</label>
         <br><br>
         <button type="submit">Absenden</button>
       </form>
@@ -37,8 +39,8 @@
             <th>Name</th>
             <th>Geburtsdatum</th>
             <th>Alter</th>
-            <th>Augenfarbe</th>
-            <th>Haustiere</th>
+            <th>hometown</th>
+            <th>hobbies</th>
           </tr>
         </thead>
         <tbody id="table-body">
