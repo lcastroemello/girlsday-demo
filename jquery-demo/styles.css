@@ -61,7 +61,7 @@ select {
   margin-bottom: 10px;
 }
 
-button[type="submit"] {
+button{
   background-color: #008CBA;
   color: #ffffff;
   border: none;
@@ -71,7 +71,7 @@ button[type="submit"] {
   margin-top: 10px;
 }
 
-button[type="submit"]:hover {
+button:hover {
   background-color: #006080;
 }
 

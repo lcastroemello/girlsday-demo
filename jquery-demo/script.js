@@ -3,6 +3,7 @@ $(document).ready(function() {
   const $tableBody = $('#table-body');
   const $successDisplay = $('#success-display');
   const $closeBtn = $('#close-btn');
+  $successDisplay.hide();
 
   $successDisplay.hide();
 
@@ -11,17 +12,17 @@ $(document).ready(function() {
 
     const name = $('#name').val();
     const geburtsdatum = $('#geburtsdatum').val();
-    const augenfarbe = $('#augenfarbe').val();
-    const haustiere = $('input[name="haustiere"]:checked').val();
+    const hometown = $('#hometown').val();
+    const hobbies = $('input[name="hobbies"]:checked').val();
     const alter = calculateAge(geburtsdatum);
-
+///hello :)
     const newRow = `
       <tr>
         <td>${name}</td>
         <td>${geburtsdatum}</td>
         <td>${alter}</td>
-        <td>${augenfarbe}</td>
-        <td>${haustiere}</td>
+        <td>${hometown}</td>
+        <td>${hobbies}</td>
       </tr>
     `;
 
