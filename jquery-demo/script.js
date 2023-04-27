@@ -4,6 +4,8 @@ $(document).ready(function() {
   const $successDisplay = $('#success-display');
   const $closeBtn = $('#close-btn');
 
+  $successDisplay.hide();
+
   $form.submit(function(e) {
     e.preventDefault();
 
@@ -27,7 +29,8 @@ $(document).ready(function() {
 
     $form.trigger('reset');
 
-    $successDisplay.hide();
+    $successDisplay.show();
+
   });
 
   function calculateAge(dateString) {
