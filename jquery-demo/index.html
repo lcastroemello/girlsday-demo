@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mädchentag: Wer sind wir?</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mädchentag: Wer sind wir?</h1>
+      <p>Willkommen zum Mädchentag! Lass uns ein wenig über uns selbst herausfinden.</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="geburtsdatum">Geburtsdatum:</label>
+        <input type="date" id="geburtsdatum" name="geburtsdatum" max="2005-04-17" required>
+        <br>
+        <label for="augenfarbe">Augenfarbe:</label>
+        <select id="augenfarbe" name="augenfarbe">
+          <option value="blau">Blau</option>
+          <option value="braun">Braun</option>
+          <option value="grün">Grün</option>
+          <option value="grau">Grau</option>
+          <option value="sonstige">Sonstige</option>
+        </select>
+        <br>
+        <label>Hast du Haustiere?</label>
+        <label><input type="radio" name="haustiere" value="ja">Ja</label>
+        <label><input type="radio" name="haustiere" value="nein">Nein</label>
+        <br><br>
+        <button type="submit">Absenden</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Geburtsdatum</th>
+            <th>Alter</th>
+            <th>Augenfarbe</th>
+            <th>Haustiere</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+      </table>
+      <button id="export-btn">Exportieren</button>
+      <div id="success-display">
+        <button id="close-btn">X</button>
+        <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/a0h7sAqON67nO" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/borat-great-success-a0h7sAqON67nO">via GIPHY</a></p>
+        <p>Vielen Dank, dass Sie mit unserem Formular gearbeitet haben! Lassen Sie uns die Daten überprüfen.</p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
