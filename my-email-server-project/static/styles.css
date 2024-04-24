@@ -47,6 +47,7 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   color: #fff;
+  font-size: 200px;
   background-color: #ff6347;
   cursor: pointer;
 }
