@@ -5,6 +5,7 @@ Demo Jquery Project for girlsday
 They need 
 - A github account
 - They need to be added as colaborators on the repo to have write rights (making new branches, making prs)
+![Screenshot 2025-04-03 at 16 01 06](https://github.com/user-attachments/assets/fa578db1-0907-4aaf-aa58-1535a94b0440)
 
 ## Working directly on github: 
 
