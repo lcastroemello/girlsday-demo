@@ -62,7 +62,8 @@ select {
 }
 
 button{
-  color: #0eb808;
+  background-color: #00ba54;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -71,8 +72,7 @@ button{
 }
 
 button:hover {
-  background-color: #0eb808;
-}
+  background-color: #00ba54;
 
 table {
   width: 100%;
@@ -88,7 +88,7 @@ td {
 }
 
 th {
-  background-color: #0eb808;
+  background-color: #00ba54;
   color: #ffffff;
 }
 
